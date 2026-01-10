@@ -5,9 +5,14 @@ memory: 16384
 
 containers:
   - name: "random-logger"
+    image: "chentex/random-logger:v1.0.1"
+    args: []
+
+  - name: "alloy"
     image: ""
     args: [
-      "chentex/random-logger:v1.0.1"
+      "-v", "/var/run/docker.sock:/var/run/docker.sock",
+      "ghcr.io/tinfoilsh/alloy-collector:v0.0.1"
     ]
 
 shim:
