@@ -12,7 +12,7 @@ containers:
     image: ""
     args: [
       "-v", "/var/run/docker.sock:/var/run/docker.sock",
-      "ghcr.io/tinfoilsh/alloy-collector:v0.0.1"
+      "ghcr.io/tinfoilsh/alloy-collector:latest"
     ]
 
 shim:
